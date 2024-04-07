@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm nhà khoa học vào danh sách</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+        /* Style for validation errors */
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+
+        /* Style for success message */
+        .success {
+            color: green;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Thêm nhà khoa học vào danh sách</h2>
+        <form action="/add-inventors" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" placeholder="Year" required>
+
+            <label for="passed">Passed:</label>
+            <input type="number" id="passed" name="passed" placeholder="Passed" required>
+
+            <input style=".them:hover{background-color: #0056b3}" class="them" type="submit" value="Add">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <%- include("../partials/header.ejs")%>
+    </header>
+    <article>
+        <h2>San Pham</h2>
+        <%for(let pro of PRODUCTS){%>
+            <div class="product">
+                <p class="title">book</p>
+                <img src="https://cdn.popsww.com/blog/sites/2/2022/03/Tuyet-Dinh-720x1080.jpg" alt="">
+                <p class="title">100$</p>
+                <p>Truyện nói về nhân vật Cao Ảnh – một tân sinh viên của Học viện Mỹ thuật Quảng Châu.</p>
+                <button>Add to cart</button>
+            </div>
+            <%}%>
+
+    </article>
+    <footer>
+        <%- include("../partials/footer.ejs")%>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<main>
+  <div id="content">
+    <form class="content-block" method="POST" action="/lab1/licensePlates">
+      <h1>Check biển số xe theo các tỉnh</h1>
+      <select id="checkPlate" name="optionValue">
+        {{{templateData}}}
+      </select>
+      <button type="submit">Tra cứu</button>
+      <h2 id="render">Biển số xe:
+        <span id="ouput">{{dataID.plate_no}}</span></h2>
+    </form>
+  </div>
+</main>
